@@ -7,7 +7,7 @@
 E sempre que preciso iniciar o ambiente de desenvolvimento o desenvolvedor tem a tarefa de subir serviço por serviço de forma manual, sendo assim o Projeto Clip nasceu, com o objectivo de automatizar e organizar serviços.
 
 ##### Instale com NPM
-npm install -g clip|
+npm i -g clip-cli
 
 ##### COMO USAR:
 Para criar um novo ambiente ou adicionar comandos ao ambiente:
@@ -26,7 +26,6 @@ clip run AppMobile
 
 ##### Para listar todos os ambientes e seus comandos
 clip list
-
 
 
 
