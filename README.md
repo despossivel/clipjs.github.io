@@ -1,35 +1,38 @@
-#### [Clip CLI](https://www.clipjs.com)
-##### Agrupador e Gereciador de Console 
+# [Clip CLI](https://www.clipjs.com)
+ 
+> Agrupador e Gereciador de Console 
+> Inicie toda familia React, Sass ou Docker e qualquer outro serviço necessário no ambiente de desenvolvimento do seu projeto.
 
-##### Inicie toda familia React, Sass ou Docker e qualquer outro serviço necessário no ambiente de desenvolvimento do seu projeto.
+## Command-line
 
-Exemplo: Em todo projeto existe a necessidade de "subir" serviços de ferramentas como reactjs, sass, Phonegap serve, Nodejs do lado servidor e varios outros serviços.
-E sempre que preciso iniciar o ambiente de desenvolvimento o desenvolvedor tem a tarefa de subir serviço por serviço de forma manual, sendo assim o Projeto Clip nasceu, com o objetivo de automatizar e organizar serviços.
+### Requirements
 
-##### Instale com NPM
-npm i -g clip-cli
+- [Install node.js](http://nodejs.org/) version `>=4.0.0`
+ 
+### Install
 
-##### COMO USAR:
-##### Para criar um novo ambiente ou adicionar comandos a um ambiente já criado:
+    $ npm i -g clip-cli
 
-clip config <nome ambiente> <diretorio projeto> <comando do serviço>
+### Começando
 
-##### Exemplo: 
-clip config AppMobile /home/Documentos/clients/com.stream.app npm start
+    $ clip config <nome ambiente> <diretorio projeto> <comando do serviço>    # Para criar um novo ambiente ou adicionar comandos a um ambiente já criado
+ 
+### Como usar
 
+    Uso: clip run <nome ambiente> 
 
-##### Para iniciar um ambiente:
-clip run <nome ambiente> 
+    Description:
 
-##### Exemplo:
-clip run AppMobile
+     Em todo projeto existe a necessidade de "subir" serviços de ferramentas como reactjs, sass, Phonegap serve, Nodejs do lado servidor e varios outros serviços.
+    E sempre que preciso iniciar o ambiente de desenvolvimento o desenvolvedor tem a tarefa de subir serviço por serviço de forma manual, sendo assim o Projeto Clip nasceu, com o objetivo de automatizar e organizar serviços.
 
+    Comandos:
 
-##### Para listar todos os ambientes e seus comandos
-clip list
-
-#### Para editar um ambiente
-clip edit <nome ambiente>
-
-#### Para remover um ambiente
-clip remove <nome ambiente>
+      config <nome ambiente> <diretorio projeto> <comando do serviço>  criar um novo ambiente ou adicionar comandos a um ambiente já criado
+      run <nome ambiente>                                              iniciar um ambiente
+      list                                                             listar todos os ambientes e seus comandos
+      edit <nome ambiente>                                             editar um ambiente
+      remove <nome ambiente>                                           remover um ambiente
+      
+   
+###### [@despossivel](https://instagram.com/despossivel) 
