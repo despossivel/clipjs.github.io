@@ -1,139 +1,110 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Clip</title>
   <meta name="theme-color" content="#333">
   <meta name="description" content="Agrupador e Gereciador de Console.">
   <meta property="og:title" content="Clipjs">
-  <meta property="og:image" content="./clip.jpg"> 
-  <meta property="og:description" content="Crie ambientes de desenvolvimento com o CLIP, e inicie tudo muito rápido!">
+  <meta property="og:image" content="./clip.jpg">
+  <meta property="og:description" content="Crie ambientes de desenvolvimento com o Clip, e inicie tudo muito rápido!">
   <meta property="og:url" content="https://clipjs.github.io/">
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="./index.css">
-    <link rel="stylesheet" type="text/css" href="./src/css/materialize.css">
-    <link rel="stylesheet" type="text/css" href="./src/css/icomoon/style.css">
-  </head>
-<body>
-<nav class="black">
-    <div class="nav-wrapper">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="./index.css">
+  <link rel="stylesheet" type="text/css" href="./src/css/materialize.css">
+  <link rel="stylesheet" type="text/css" href="./src/css/icomoon/style.css">
+</head>
 
-     <div class="brand-logo logoMargin white-text">
-       <span class="icon-paperclip2"></span>
-     </div>
+<body>
+  <nav class="black">
+    <div class="nav-wrapper">
+      <div class="brand-logo logoMargin white-text">
+        <span class="icon-paperclip2"></span>
+      </div>
       <ul id="nav-mobile" class="right hide-on-med-and-down menuMargin ">
         <li><a class="white-text" href="#comoUsar">Como usar?</a></li>
-        <li><a  class="white-text" href="#colaborador">Seja um colaborador!</a></li>
+        <li><a class="white-text" href="#colaborador">Seja um colaborador!</a></li>
       </ul>
     </div>
-</nav>
-<div class="grey darken-4"> 
-  <div class="col s12">
-
-  <div class="container boxFist "> 
-      <div class="textInit white-text">
-        Crie ambientes de desenvolvimento com o CLIP, e inicie tudo muito rápido!
-      </div>
-      <div class="boxTextFooter">
-        <div class="textInitFooter">
-          <div class="col s12 white-text">
-            <h5>Instale com  <a href="https://www.npmjs.com/package/clip-cli"><span class="icon-npm bigIcon down"></span></a> </h5>
-      </div>
-    </div>
-  <div class="terminal_window">
-  <header>
-    <div class="red_btn button"></div>
-    <div class="green_btn button"></div>
-    <div class="yellow_btn button"></div>
-  </header>
-    <div class="terminal_window">
-      <div id="typed-strings" class="terminal_text">
-        <p>$ npm i -g clip-cli</p>
-      </div>
-      <span id="typed"></span>
-    </div>
-  </div>
-</div>
-</div>
-   <div id="comoUsar" class="container box">
+  </nav>
+  <div class="grey darken-4">
     <div class="col s12">
-      <div class="textInitFooter white-text">
-     <h5>Inicie o  <span class="icon-react"></span> React-Native , <span class="icon-sass"></span> Sass ou  <span class="icon-docker"></span> Docker <br>
-      e qualquer outro serviço necessário no ambiente de desenvolvimento do seu projeto.</h5>
+      <div class="container boxFist ">
+        <div class="textInit white-text">
+          Crie ambientes de desenvolvimento com o Clip, e inicie tudo muito rápido!
+        </div>
+        <div class="boxTextFooter">
+          <div class="textInitFooter">
+            <div class="col s12 white-text">
+              <h5>Instale com <a href="https://github.com/clipjs/clipjs.github.io/blob/master/README.md">
+                  <span class="icon-npm bigIcon down"></span></a> </h5>
+            </div>
+          </div>
+          <div class="terminal_window">
+            <header>
+              <div class="red_btn button"></div>
+              <div class="green_btn button"></div>
+              <div class="yellow_btn button"></div>
+            </header>
+            <div class="terminal_window">
+              <div id="typed-strings" class="terminal_text">
+                <p>$sudo npm i -g clip-cli</p>
+              </div>
+              <span id="typed"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="comoUsar" class="container box">
+        <div class="col s12">
+          <div class="textInitFooter white-text">
+            <h5>Inicie o <span class="icon-react"></span> React-Native , <span class="icon-sass"></span> Sass ou <span
+                class="icon-docker"></span> Docker <br>
+              e qualquer outro serviço necessário no ambiente de desenvolvimento do seu projeto.</h5>
+          </div>
+        </div>
+        <div class="col s12">
+          <div class="container box">
+            <div class="textLeft white-text">COMO USAR: </div>
+            <div class="textBox white-text">
+              Para criar um novo ambiente ou adicionar comandos ao ambiente:<br><br>
+              <div class="boxExemplo">
+                Exemplo: <br>
+                clip --adicionar --nome deliveri --diretorio "/home/deliveri/api" --comando "nodemon"
+                <br> <br>
+                Adicionar novo comando: <br>
+                clip --novoComando --nome deliveri --diretorio "/home/deliveri/api" --comando "mocha"
+              </div>
+              <br><br>
+            </div>
+            <div class="textBox white-text">
+              <div class="boxExemplo">
+                Exemplo:<br>
+                clip --run --nome deliveri
+              </div>
+              <br><br>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  <div class="col s12">
-    <div class="container box">
-    
-  <div class="textLeft white-text">COMO USAR: </div>
-    <div class="textBox white-text">
-            Para criar um novo ambiente ou adicionar comandos ao ambiente:<br><br>
-       
-          <b>Clip config "Nome do Projeto"" "Diretorio do projeto" "Comando"</b>  
-          
-          <div class="boxExemplo">
-           Exemplo: <br> 
-            clip config AppMobile /home/Documentos/clients/com.stream.app npm start
-          </div>
-
-
-          <br><br>
-    </div>
-
-    <div class="textBox white-text">
-          Para iniciar um ambiente:<br><br>
-         <b> Clip run "Nome do Projeto"</b>
-         
-         <div class="boxExemplo">
-          Exemplo:<br>
-           clip run AppMobile
-         </div>
-         <br><br>
-    </div>
-        
-    </div>
-  </div>
-
-
-
-
-
- </div>
-</div>
- 
-
-<footer class="page-footer black">
+    <footer class="page-footer black">
       <div class="container">
-            <div class="row">
-         <!--      <div class="col l6 s12">
-                <h5 class="">Quanto custa?</h5>
-                <p class="grey-text text-lighten-4">A licença do Clip custa apenas R$ 2, um valor simbólico, para nos ajudar no desenvolvimento do projeto. 
-                  <br/> <br/>Quando atingirmos uma marca de 100 mil downloads no NPM, o Clip se tornará código aberto.</p>
-              </div> -->
-              <div class="col l4 offset-l2 s12">
-                <h5 class="">Colaborar</h5>
-                <ul><!-- 
-                  <li><a class="grey-text text-lighten-3" href="#!">Quero ser um colaborador</a></li> -->
-               <!--    <li><a class="grey-text text-lighten-3" href="https://apoia.se/clipjs">Quero fazer um fork para colaborar</a></li> -->
-                  <li><a class="grey-text text-lighten-3" href="https://apoia.se/clipjs">Quero ajudar financeiramente</a></li>
-                  <li class="marginTop"><a class="grey-text text-lighten-3 imgPequena" href="https://apoia.se/clipjs" ><img src="./src/img/apoia-se.png"></a></li>  
-                </ul>
-              </div>
-            </div>
+        <div class="row">
+          <div class="col l4 offset-l2 s12">
+            <ul></ul>
           </div>
-
-
-          <div class="footer-copyright">
-            <div class="container white-text">
-           Clip V 0.1
-       
-            <a class="white-text right" href="https://instagram.com/despossivel"><span class="icon-instagram"></span>  @despossivel</a>
-      
-            </div>
-          </div>
-        </footer>
-
-
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container white-text">
+          Clip
+          <a class="white-text right" href="https://instagram.com/despossivel"><span class="icon-instagram"></span>
+            @despossivel</a>
+        </div>
+      </div>
+    </footer>
 </body>
 <script type="text/javascript" src="./src/js/materialize.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.js"></script>
@@ -142,9 +113,9 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125810330-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
-
   gtag('config', 'UA-125810330-2');
 </script>
+
 </html>
