@@ -1,4 +1,4 @@
-# [Clip CLI](https://www.clipjs.com)
+# [Clip CLI](https://clipjs.github.io)
  
 > Agrupador e Gereciador de Console 
 > Inicie toda familia React, Sass, Docker e qualquer outro serviço necessário no ambiente de desenvolvimento do seu projeto.
